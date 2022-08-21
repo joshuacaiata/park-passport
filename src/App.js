@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import HomePage from './pages/Home';
+import Disneyland from './pages/disneyland/Disneyland';
+import Layout from './components/layout/Layout';
+import MagicKingdom from './pages/disneyworld/magic kingdom/MagicKingdom';
+import AnimalKingdom from './pages/disneyworld/animal kingdom/AnimalKingdom';
+import Epcot from './pages/disneyworld/epcot/Epcot';
+import HollywoodStudios from './pages/disneyworld/hollywood studios/HollywoodStudios';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='disneyland' element={<Disneyland />} />
+        <Route path='magickingdom' element={<MagicKingdom />} />
+        <Route path='animalkingdom' element={<AnimalKingdom />} />
+        <Route path='epcot' element={<Epcot />} />
+        <Route path='hollywoodstudios' element={<HollywoodStudios />} />
+      </Routes>
+    </Layout>
   );
 }
 

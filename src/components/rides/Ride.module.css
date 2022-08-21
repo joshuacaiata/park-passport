@@ -1,0 +1,25 @@
+.item {
+    margin: 1rem 0;
+    position: relative;
+  }
+  
+  .content {
+    text-align: left;
+    padding: 1rem;
+  }
+
+  .content h3 {
+    font-size: 1rem;
+    text-align: left;
+    color: #2c292b;
+    position: absolute;
+  }
+  
+  .count {
+    text-align: right;
+    padding: 1rem;
+  }
+
+  .button {
+    margin: 5px;
+  }
