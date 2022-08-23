@@ -1,3 +1,4 @@
+import classes from "./Land.module.css"
 import RideList from "../rides/RideList";
 
 function Land(props) {

@@ -25,6 +25,9 @@ function Nav() {
                     <li>
                         <Link to='/animalkingdom'>Animal Kingdom</Link>
                     </li>
+                    <li>
+                        <Link to='/californiaadventure'>California Adventure</Link>
+                    </li>
                 </ul>
             </nav>
         </header>

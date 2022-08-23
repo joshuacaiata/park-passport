@@ -1,0 +1,42 @@
+.card {
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  grid-template-columns: 300px 1fr;
+  max-height: 180px;
+  position: relative;
+  vertical-align: middle;
+  margin-bottom: 20px;
+}
+
+.image {
+  display: inline-block;
+}
+
+.image img {
+  max-height: 180px;
+  width: 270px;
+  overflow: hidden;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.info {
+  color: black;
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  padding-top: 62px;
+  width: 370px;
+}
+
+.parkName {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.parkLocation {
+  font-style: italic;
+  margin-top: 5px;
+}
