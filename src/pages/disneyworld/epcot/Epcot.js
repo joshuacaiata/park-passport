@@ -3,11 +3,11 @@ import EPCOTLANDS from "./Info.js";
 import React from 'react';
 import classes from '../../Pages.module.css';
 
-function Epcot() {
+function Epcot(props) {
     return (
         <div className={classes.parklist}>
             <h1>Epcot</h1>
-            <LandList lands={EPCOTLANDS} />
+            <LandList total={props.total} inc={props.inc} dec={props.dec} lands={EPCOTLANDS} />
         </div>
     )
 }

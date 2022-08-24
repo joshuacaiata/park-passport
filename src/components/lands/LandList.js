@@ -7,6 +7,9 @@ function LandList(props) {
         <ul className={classes.list}>
             {props.lands.map(land =>
                 <Land
+                    total={props.total}
+                    inc={props.inc}
+                    dec={props.dec}
                     name={land.name}
                     rides={land.rides} />
             )}

@@ -3,11 +3,11 @@ import ANIMALKINGDOMLANDS from "./Info.js";
 import React from 'react';
 import classes from '../../Pages.module.css';
 
-function AnimalKingdom() {
+function AnimalKingdom(props) {
     return (
         <div className={classes.parklist}>
             <h1>Animal Kingdom</h1>
-            <LandList lands={ANIMALKINGDOMLANDS} />
+            <LandList total={props.total} inc={props.inc} dec={props.dec} lands={ANIMALKINGDOMLANDS} />
         </div>
     )
 }

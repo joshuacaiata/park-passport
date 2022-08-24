@@ -7,6 +7,9 @@ function RideList(props) {
         <ul className={classes.list}>
             {props.rides.map(ride =>
                 <Ride
+                    total={props.total}
+                    inc={props.inc}
+                    dec={props.dec}
                     name={ride.name}
                     count={ride.count} />
             )}

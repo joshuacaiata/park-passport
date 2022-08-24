@@ -3,11 +3,11 @@ import HOLLYWOODSTUDIOSLANDS from "./Info.js";
 import React from 'react';
 import classes from '../../Pages.module.css';
 
-function HollywoodStudios() {
+function HollywoodStudios(props) {
     return (
         <div className={classes.parklist}>
             <h1>Hollywood Studios</h1>
-            <LandList lands={HOLLYWOODSTUDIOSLANDS} />
+            <LandList total={props.total} inc={props.inc} dec={props.dec} lands={HOLLYWOODSTUDIOSLANDS} />
         </div>
     )
 }

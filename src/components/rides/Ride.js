@@ -2,19 +2,32 @@ import Card from "../layout/Card";
 import classes from './Ride.module.css';
 import React from 'react';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function Ride(props) {
 
-    const [rideCount, setRideCount] = useState(0);
+    const [rideCount, setRideCount] = useState(() => {
+        const saved = localStorage.getItem(props.name);
+        const initialVal = JSON.parse(saved);
+        return initialVal || 0;
+    });
+
+    useEffect(() => {
+        localStorage.setItem(props.name, JSON.stringify(rideCount));
+    })
 
     const incrementCount = () => {
         setRideCount(rideCount + 1);
+        props.inc()
     }
 
     const decrementCount = () => {
         if (rideCount > 0) {
             setRideCount(rideCount - 1);
+        }
+
+        if (props.total > 0) {
+            props.dec()
         }
     }
 

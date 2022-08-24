@@ -3,11 +3,11 @@ import DISNEYLANDLANDS from "./Info";
 import React from 'react';
 import classes from '../Pages.module.css';
 
-function Disneyland() {
+function Disneyland(props) {
     return (
         <div className={classes.parklist}>
             <h1>Disneyland</h1>
-            <LandList lands={DISNEYLANDLANDS}/>
+            <LandList total={props.total} inc={props.inc} dec={props.dec} lands={DISNEYLANDLANDS}/>
         </div>
     )
 }

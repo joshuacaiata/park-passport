@@ -3,10 +3,10 @@ import React from 'react';
 import LOCATIONS from '../../components/locations/Locations';
 import InfoCard from '../../components/InfoCard';
 
-function HomePage() {
+function HomePage(props) {
     return (
         <div>
-            <InfoCard />
+            <InfoCard  total={props.total}/>
             <LocationList locations={LOCATIONS}/>
         </div>
     );
