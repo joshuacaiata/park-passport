@@ -7,6 +7,9 @@ import AnimalKingdom from './pages/disneyworld/animal kingdom/AnimalKingdom';
 import Epcot from './pages/disneyworld/epcot/Epcot';
 import HollywoodStudios from './pages/disneyworld/hollywood studios/HollywoodStudios';
 import CaliforniaAdventure from './pages/disneyland/CaliforniaAdventure';
+import React from 'react';
+import California from './pages/california/California';
+import Florida from './pages/florida/Florida';
 
 function App() {
   return (
@@ -19,6 +22,8 @@ function App() {
         <Route path='epcot' element={<Epcot />} />
         <Route path='hollywoodstudios' element={<HollywoodStudios />} />
         <Route path='californiaadventure' element={<CaliforniaAdventure />} />
+        <Route path='california' element={<California />} />
+        <Route path='florida' element={<Florida />} />
       </Routes>
     </Layout>
   );

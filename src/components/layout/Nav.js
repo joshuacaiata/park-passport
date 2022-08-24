@@ -1,32 +1,23 @@
 import { Link } from 'react-router-dom';
 import classes from './Nav.module.css';
+import React from 'react';
 
 function Nav() {
     return (
         <header className={classes.header}>
-            <div className={classes.logo}>Park Passport</div>
+            <div className={classes.logo}>
+                Park Passport
+            </div>
             <nav>
                 <ul>
                     <li>
                         <Link to='/'>Home</Link>
                     </li>
                     <li>
-                        <Link to='/disneyland'>Disneyland</Link>
+                        <Link to='/florida'>Florida</Link>
                     </li>
                     <li>
-                        <Link to='/magickingdom'>Magic Kingdom</Link>
-                    </li>
-                    <li>
-                        <Link to='/epcot'>Epcot</Link>
-                    </li>
-                    <li>
-                        <Link to='/hollywoodstudios'>Hollywood Studios</Link>
-                    </li>
-                    <li>
-                        <Link to='/animalkingdom'>Animal Kingdom</Link>
-                    </li>
-                    <li>
-                        <Link to='/californiaadventure'>California Adventure</Link>
+                        <Link to='/california'>California</Link>
                     </li>
                 </ul>
             </nav>

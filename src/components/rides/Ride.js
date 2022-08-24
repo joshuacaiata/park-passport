@@ -1,5 +1,6 @@
 import Card from "../layout/Card";
 import classes from './Ride.module.css';
+import React from 'react';
 
 import { useState } from 'react';
 

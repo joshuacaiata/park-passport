@@ -1,5 +1,6 @@
 import classes from './LandList.module.css';
 import Land from './Land';
+import React from 'react';
 
 function LandList(props) {
     return (

@@ -1,10 +1,11 @@
-import classes from "./Land.module.css"
 import RideList from "../rides/RideList";
+import React from 'react';
+import classes from './Land.module.css'
 
 function Land(props) {
     return (
-        <div>
-            <h3>{props.name}</h3>
+        <div className={classes.landBox}>
+            <h3 className={classes.title}>{props.name}</h3>
             <RideList rides={props.rides} />
         </div>
     )

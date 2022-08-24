@@ -1,0 +1,14 @@
+.card {
+    padding: 10px;
+    margin-top: 20px;
+    vertical-align: middle;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    background-color: #954fff;
+}
+
+.content {
+    margin: 15px;
+    margin-bottom: 20px;
+    color: white;
+}

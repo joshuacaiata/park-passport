@@ -1,4 +1,5 @@
-import ParkCard from "./ParkCard"
+import ParkCard from "./ParkCard";
+import React from 'react';
 
 function ParkList(props) {
     return (

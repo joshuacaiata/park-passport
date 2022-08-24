@@ -1,5 +1,13 @@
+.title {
+    margin: 0px;
+    padding-bottom: 10px;
+    color: black;
+}
+
 .landBox {
-    background-color: grey;
-    width: 100px;
-    height: 100px;
+    background-color: #e0e0e0;
+    margin-bottom: 20px;
+    width: 650px;
+    padding: 25px;
+    border-radius: 20px;;
 }

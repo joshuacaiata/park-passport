@@ -1,7 +1,8 @@
-import classes from './ParkCard.module.css';
+import classes from '../parks/ParkCard.module.css'
 import { Link } from 'react-router-dom';
+import React from 'react';
 
-function ParkCard(props) {
+function LocationCard(props) {
     return (
         <Link to={props.linkto}>
             <div className={classes.card}>
@@ -10,11 +11,11 @@ function ParkCard(props) {
                 </div>
                 <div className={classes.info}>
                     <div className={classes.parkName}>{props.name}</div>
-                    <div className={classes.parkLocation}>{props.location}</div>
+                    <div className={classes.parkLocation}>{props.country}</div>
                 </div>
             </div>
         </Link>
-    );
+    )
 }
 
-export default ParkCard;
+export default LocationCard;

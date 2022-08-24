@@ -1,14 +1,14 @@
 import LandList from "../../../components/lands/LandList";
 import ANIMALKINGDOMLANDS from "./Info.js";
+import React from 'react';
+import classes from '../../Pages.module.css';
 
 function AnimalKingdom() {
     return (
-        <section>
-            <ul>
-                <h1>Animal Kingdom</h1>
-                <LandList lands={ANIMALKINGDOMLANDS} />
-            </ul>
-        </section>
+        <div className={classes.parklist}>
+            <h1>Animal Kingdom</h1>
+            <LandList lands={ANIMALKINGDOMLANDS} />
+        </div>
     )
 }
 
