@@ -5,14 +5,13 @@ import React from 'react';
 function Nav() {
     return (
         <header className={classes.header}>
-            <div className={classes.logo}>
-                Park Passport
-            </div>
+            <Link to='/'>
+                <div className={classes.logo}>
+                    Park Passport
+                </div>
+            </Link>
             <nav>
                 <ul>
-                    <li>
-                        <Link to='/'>Home</Link>
-                    </li>
                     <li>
                         <Link to='/florida'>Florida</Link>
                     </li>

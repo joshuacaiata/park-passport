@@ -10,11 +10,19 @@ import CaliforniaAdventure from './pages/disneyland/CaliforniaAdventure';
 import React from 'react';
 import California from './pages/california/California';
 import Florida from './pages/florida/Florida';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function App() {
 
-  const [totalCount, setTotalCount] = useState(0);
+  const [totalCount, setTotalCount] = useState(() => {
+    const saved = localStorage.getItem('total count');
+    const initialVal = JSON.parse(saved);
+    return initialVal || 0;
+  });
+
+  useEffect(() => {
+    localStorage.setItem('total count', JSON.stringify(totalCount));
+  })
 
   function incrementTotal() {
     setTotalCount(totalCount + 1);
