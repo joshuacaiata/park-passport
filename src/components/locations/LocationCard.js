@@ -4,17 +4,19 @@ import React from 'react';
 
 function LocationCard(props) {
     return (
-        <Link to={props.linkto}>
-            <div className={classes.card}>
-                <div className={classes.image}>
-                    <img src={props.img} alt={props.alt} />
+        <li className={classes.card_item}>
+            <Link to={props.linkto}>
+                <div className={classes.card}>
+                    <div className={classes.card_image}>
+                        <img src={props.img} alt={props.alt} />
+                    </div>
+                    <div className={classes.card_content}>
+                        <div className={classes.card_title}>{props.name}</div>
+                        
+                    </div>
                 </div>
-                <div className={classes.info}>
-                    <div className={classes.parkName}>{props.name}</div>
-                    <div className={classes.parkLocation}>{props.country}</div>
-                </div>
-            </div>
-        </Link>
+            </Link>
+        </li>
     )
 }
 

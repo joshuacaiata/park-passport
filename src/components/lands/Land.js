@@ -4,10 +4,10 @@ import classes from './Land.module.css'
 
 function Land(props) {
     return (
-        <div className={classes.landBox}>
+        <li className={classes.landBox}>
             <h3 className={classes.title}>{props.name}</h3>
             <RideList total={props.total} inc={props.inc} dec={props.dec} rides={props.rides} />
-        </div>
+        </li>
     )
 }
 

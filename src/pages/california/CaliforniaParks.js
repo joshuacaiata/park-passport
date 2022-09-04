@@ -1,5 +1,5 @@
-import disneyland from './disneyland.avif'
-import cadv from './californiaadventure.avif'
+import disneyland from './ca-dl.png'
+import dca from './ca-dca.png'
 
 const CALIFORNIAPARKS = [
     {
@@ -12,7 +12,7 @@ const CALIFORNIAPARKS = [
     {
         name: 'California Adventure',
         location: 'Anaheim, California',
-        img: cadv,
+        img: dca,
         alt: 'Picture of California Adventure',
         linkto: '/californiaadventure',
     }

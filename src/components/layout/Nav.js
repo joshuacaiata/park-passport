@@ -4,7 +4,7 @@ import React from 'react';
 
 function Nav() {
     return (
-        <header className={classes.header}>
+        <div className={classes.header}>
             <Link to='/'>
                 <div className={classes.logo}>
                     Park Passport
@@ -20,7 +20,7 @@ function Nav() {
                     </li>
                 </ul>
             </nav>
-        </header>
+        </div>
     )
 }
 

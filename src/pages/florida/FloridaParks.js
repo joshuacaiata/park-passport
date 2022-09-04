@@ -1,7 +1,7 @@
-import aking from './animalkingdom.avif';
-import epcot from './epcot.avif';
-import hstd from './hollywoodstudios.avif';
-import mking from './magickingdom.avif'
+import aking from './fl-ak.png';
+import epcot from './fl-ep.png';
+import hstd from './fl-hs.png';
+import mking from './fl-mk.png'
 
 
 const FLORIDAPARKS = [

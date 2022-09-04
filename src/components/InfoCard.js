@@ -3,7 +3,7 @@ import classes from './InfoCard.module.css'
 
 function InfoCard(props) {
     return (
-        <div className={classes.card}>
+        <div className={classes.info_card}>
             <div className={classes.content}>
                 <h1>Welcome to Park Passport!</h1>
                 <p>

@@ -1,5 +1,5 @@
-import california from './california.avif';
-import florida from './florida.avif'
+import california from './ca.png';
+import florida from './fl.png'
 
 const LOCATIONS = [
     {
