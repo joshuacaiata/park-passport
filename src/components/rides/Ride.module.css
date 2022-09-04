@@ -6,7 +6,7 @@
   .content {
     text-align: left;
     overflow: auto;
-    padding: 1em 0;
+    padding: 1em 0 1.75em;
   }
 
   .content h3 {
