@@ -5,6 +5,8 @@
   
   .content {
     text-align: left;
+    overflow: auto;
+    padding: 1em 0;
   }
 
   .content h3 {
@@ -12,8 +14,9 @@
     text-align: left;
     color: black;
     position: absolute;
-    padding: 10px;
-    margin-top: 12px;
+    padding: 0 1em;
+    inline-size: 60%;
+    overflow-wrap: break-word;
   }
   
   .count {
